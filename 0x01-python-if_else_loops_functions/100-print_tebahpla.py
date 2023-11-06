@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-for alphabet in range(122, 96, -1):
+alphabet = ord('z')
+while alphabet >= ord('a'):
     if alphabet % 2 == 0:
-        print("{}".format(chr(alphabet)), end="")
+        print("{:c}".format(alphabet), end='')
     else:
-        print("{}".format(chr(alphabet - 32)), end="")
+        print("{:c}".format(alphabet - (ord('a') - ord('A'))), end='')
+    alphabet -= 1
