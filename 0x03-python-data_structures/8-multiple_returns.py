@@ -2,7 +2,7 @@
 def multiple_returns(sentence):
     len_gth = len(sentence)
     if len_gth == 0:
-        char = "None"
+        cha = "None"
     else:
         cha = sentence[0]
     operation = (len_gth, cha)
